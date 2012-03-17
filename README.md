@@ -1,5 +1,7 @@
 # django-registration-templates
 
+## Background
+
 This packages is purely for convenience. It is based on the following blog post and bitbucket repo:
 
 		https://devdoodles.wordpress.com/2009/02/16/user-authentication-with-django-registration/
