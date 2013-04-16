@@ -1,5 +1,9 @@
 # django-registration-templates
 
+## Updates for 1.5
+
+This fork fixes the syntax so templates will work under Django 1.5.x
+
 ## Background
 
 This packages is purely for convenience. It is based on the following blog post and bitbucket repo:
