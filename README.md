@@ -7,9 +7,9 @@ This packages is purely for convenience. It is based on the following blog post 
 		https://devdoodles.wordpress.com/2009/02/16/user-authentication-with-django-registration/
 		https://bitbucket.org/devdoodles/registration_templates/src
 
-Both are fantastic resources. django-registration-templates adds a missing _activation-complete_ template and _{% csrf_token %}_ to all the forms.
+Both are fantastic resources. django-registration-templates adds a missing `activation-complete` template and `{% csrf_token %}` to all the forms.
 
-The template seem to work fine with both django registration and django registration redux.  Please file an issue or pull request if you have any problems.
+The template seem to work fine with both `django-registration` and `django-registration-redux`.  Please file an issue or pull request if you have any problems.
 
 ## Usage
 
@@ -22,4 +22,4 @@ Then move the registration directory to your templates directory:
 		cd django-registration-templates
 		mv registration path/to/your/templates/
 
-base.html and index.html are also included but most likely, you'll already have those present in your templates directory.
+`base.html` and `index.html` are also included but most likely, you'll already have those present in your templates directory.
