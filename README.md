@@ -1,9 +1,5 @@
 # django-registration-templates
 
-## Updates for 1.5
-
-This fork fixes the syntax so templates will work under Django 1.5.x
-
 ## Background
 
 This packages is purely for convenience. It is based on the following blog post and bitbucket repo:
@@ -12,6 +8,8 @@ This packages is purely for convenience. It is based on the following blog post 
 		https://bitbucket.org/devdoodles/registration_templates/src
 
 Both are fantastic resources. django-registration-templates adds a missing _activation-complete_ template and _{% csrf_token %}_ to all the forms.
+
+The template seem to work fine with both django registration and django registration redux.  Please file an issue or pull request if you have any problems.
 
 ## Usage
 
