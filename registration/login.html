@@ -1,15 +1,18 @@
-{% extends "base.html" %}
-{% load i18n %}
+{% extends "base.html" %} {% load i18n %} {% load crispy_forms_tags %} {% block content %}
+<!-- Main Content -->
+<main class="container">
+  <section class="row">
+    <section class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-5">
+      <form method="post" action=".">
+        {% csrf_token %} {{ form|crispy}}
 
-{% block content %}
-<form method="post" action=".">
-  {% csrf_token %} 
-  {{ form.as_p }}
+        <input type="submit" value="{% trans 'Log in' %}" />
+        <input type="hidden" name="next" value="{{ next }}" />
+      </form>
+    </section>
+  </section>
+</main>
 
-  <input type="submit" value="{% trans 'Log in' %}" />
-  <input type="hidden" name="next" value="{{ next }}" />
-</form>
-
-<p>{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
-<p>{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!</p>
+<p class="text-center">{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
+<p class="text-center">{% trans "Not member" %}? <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>!</p>
 {% endblock %}
