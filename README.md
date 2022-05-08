@@ -10,6 +10,7 @@ This packages is purely for convenience. It is based on the following blog post 
 Both are fantastic resources. django-registration-templates adds a missing `activation-complete` template and `{% csrf_token %}` to all the forms.
 
 The template seem to work fine with both `django-registration` and `django-registration-redux`.  Please file an issue or pull request if you have any problems.
+This is known to work with Django 3.2+ and django-registraion 3.0.
 
 ## Usage
 
