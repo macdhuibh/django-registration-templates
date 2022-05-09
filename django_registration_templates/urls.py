@@ -3,5 +3,6 @@ from django_registration_templates import views
 
 
 urlpatterns = [
-    path('index_template/', views.Index.as_view(), name='index_template'),
+    path('index/', views.Index.as_view(), name='index'),
+    path('accounts/profile/', views.AccountProfile.as_view(), name='account_profile'),
 ]
