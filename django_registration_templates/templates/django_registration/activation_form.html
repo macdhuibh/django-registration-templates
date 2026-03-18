@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+{% if activation_error %}
+<p>{% trans "Account activation failed." %}</p>
+{% else %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="{% trans 'Activate' %}" />
+</form>
+{% endif %}
+
+{% endblock %}
