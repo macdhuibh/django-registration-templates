@@ -1,9 +1,10 @@
 {% load i18n %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
     <title>{% block title %} Django Auth & Registration Templates {% endblock %}</title>
 </head>
 
